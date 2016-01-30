@@ -1,4 +1,6 @@
 # TAKE ENTIRELY FROM "Users Python API" by Google
+# LEARN MORE:  
+    #   https://cloud.google.com/appengine/docs/python/users/
 
 from google.appengine.api import users
 
