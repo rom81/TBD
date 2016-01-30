@@ -1,9 +1,34 @@
-body {
-  font-family: Verdana, Helvetica, sans-serif;
+<style>
+
+#header {
   background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/49/Pittsburgh_Skyline.JPG);
   background-color: #cccccc;
+  text-align: center;
+  padding: 5px;
 }
 
-span + span {
-  margin-left: 10px;
+#nav {
+  font-family: Verdana, Helvetica, sans-serif;
+  line-height: 40px;
+  background-color: #234567;
+  height: 300px;
+  width: 100px;
+  float: left;
+  padding: 5px;
 }
+
+#section {
+  width: 350px;
+  float: left;
+  padding: 10px;
+}
+
+#footer {
+  background-color: white;
+  color: #234567;
+  clear: both;
+  text-align: center;
+  padding: 5px;
+}
+
+</style>
