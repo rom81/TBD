@@ -1,8 +1,18 @@
 runtime: python
 api_version: 1
-threadsafe: yes
+threadsafe: true
 
+# handlers
 handlers:
-- url: .*
+- url: /.*
   script: main.py
   login: required
+
+#libraries
+libraries:
+- name: webapp2
+  version: latest #this should be changed to an "actual version number"
+  #https://cloud.google.com/appengine/docs/python/tools/libraries27
+- name: jinja2
+  version: latest
+  
