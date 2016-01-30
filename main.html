@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 {% autoescape true %}
-<html>
-
+<html lang="en-us">
   <head>
+    <style>
+    .all {
+      float: left;
+      margin: 5px;
+      padding: 15px;
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+    }
+  
+    </style>
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
   </head>
 
-  <body>
-    <span><a href="about.html">About</a></span>
-  </body>
+  <body class="all">
+    <div id="header">
+      <h1>TBD</h1>
+    </div>
 
+    <div id="nav">
+      <a href="main.html">Home</a><br>
+      <a href="about.html">About</a><br>
+      <!-- INSERT USER API TO SIGN UP -->
+      <!-- INSERT USER API TO SIGN IN -->
+    </div>
+
+    <div id="section">
+      <h2>What is TBD?</h2>
+      <p>TBD is a web app designed to provide users
+         with a feed of upcoming events. Users can choose
+         which events they want to attend.</p>
+      <p>TBD was created at the University of Pittsburgh's
+         She Innovates hackathon.</p>
+    </div>
+
+    <div id="footer">
+      She Innovates 2016™
+    </div>
+  </body>
 </html>
 {% end autoescape %}
