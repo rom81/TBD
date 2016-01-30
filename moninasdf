@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+public class Flutter
+{
+	public static void main(String[] args) {
+		int limit = 26;
+		String flap = JOptionPane.showInputDialog(null, "Enter a flap ");
+		if(flap.length()<=limit){
+			JOptionPane.showMessageDialog(null, flap, "FLUTTER", JOptionPane.PLAIN_MESSAGE);
+		}
+		else{
+			JOptionPane.showMessageDialog(null, "You've exceeded the maximum character limit of 26 characters.", "FLUTTER", JOptionPane.ERROR_MESSAGE);
+		}
+		
+		System.exit(0);
+	}
+}
