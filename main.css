@@ -1,7 +1,9 @@
 body {
   font-family: Verdana, Helvetica, sans-serif;
-  background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/49/Pittsburgh_Skyline.JPG);
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/4/49/Pittsburgh_Skyline.JPG);
   background-color: #cccccc;
-	
 }
 
+span + span {
+  margin-left: 10px;
+}
