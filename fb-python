@@ -1,8 +1,8 @@
-update_url = "https://graph.facebook.com/<Your_FacebookProfile_ID>/events"
+update_url = "https://graph.facebook.com/<1563505601>/events"
 form_fields = {
-   "access_token": "Your Access Token",
+   "access_token": "user_location",
    "start_time" : "1272718027",
-   "location" : "someplace",
+   "location" : "Pittsburgh",
    "name" : "New Test Event Using Graph API"
 }
 temp = {}
