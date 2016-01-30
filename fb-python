@@ -1,0 +1,21 @@
+update_url = "https://graph.facebook.com/<Your_FacebookProfile_ID>/events"
+form_fields = {
+   "access_token": "Your Access Token",
+   "start_time" : "1272718027",
+   "location" : "someplace",
+   "name" : "New Test Event Using Graph API"
+}
+temp = {}
+for k, v in form_fields.iteritems():
+  temp[k] = unicode(v).encode('utf-8')
+
+form_data = urllib.urlencode(temp)
+res = urlfetch.fetch(url=update_url,
+                     payload=form_data,
+                     method=urlfetch.POST,
+                     headers={'Content-Type': 'application/x-www-form-urlencoded'})
+result = json.loads(res.content)
+if result.get('id', False):
+   "Successfully Created Event"
+else:
+   "Failure"
